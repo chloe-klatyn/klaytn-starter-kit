@@ -14,8 +14,10 @@ module.exports = {
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
-        Roboto: ["Roboto", "sans-serif"],
         Outfit: ["Outfit", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
+        Worksans: ['"Work Sans"', "sans-serif"],
+        Opensans: ['"Open Sans"', "sans-serif"],
       },
     },
   },
