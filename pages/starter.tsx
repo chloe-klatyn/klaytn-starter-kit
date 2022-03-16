@@ -3,8 +3,8 @@ import InfoCard from "../components/InfoCard";
 
 const Starter: NextPage = () => {
   return (
-    <div className="flex flex-col min-h-screen items-center mt-20">
-      <div className="grid grid-cols-3">
+    <div className="flex justify-center mt-20 mx-auto">
+      <div className="grid grid-cols-3 gap-4">
         <InfoCard />
         <InfoCard />
         <InfoCard />

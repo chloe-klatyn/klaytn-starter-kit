@@ -3,7 +3,7 @@ import { CodeIcon } from "@heroicons/react/outline";
 const InfoCard = () => {
   return (
     <div>
-      <div className="border shadow shadow-lg w-48 rounded-md border-2 border-grey border-dotted p-4">
+      <div className="border shadow w-48 rounded-md border border-grey p-4">
         <div className="border-b-2 border-dotted border-grey text-xl pb-2 hover:text-gray-500">
           <a
             href="https://github.com/Krustuniverse-KlaytnGroup/klaytn-contracts"
