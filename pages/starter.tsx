@@ -3,7 +3,7 @@ import InfoCard from "../components/InfoCard";
 
 const Starter: NextPage = () => {
   return (
-    <div className="flex justify-center mt-20 mx-auto">
+    <div className="flex justify-center">
       <div className="grid grid-cols-3 gap-4">
         <InfoCard />
         <InfoCard />
