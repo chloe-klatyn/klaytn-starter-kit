@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
+import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
-  return <div className="flex justify-center">tools</div>;
-};
+  return <div className="flex justify-center">tools</div>
+}
 
-export default Home;
+export default Home
