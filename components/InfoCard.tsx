@@ -1,33 +1,33 @@
-import { CodeIcon } from "@heroicons/react/outline";
+import { CodeIcon } from '@heroicons/react/outline'
 
-const InfoCard = () => {
+interface Props {
+  title: string
+  description: string
+  difficulty: string
+  link: string
+}
+
+const InfoCard = (kit: Props) => {
   return (
     <div>
-      <div className="border shadow w-48 rounded-md border border-grey p-4">
-        <div className="border-b-2 border-dotted border-grey text-xl pb-2 hover:text-gray-500">
-          <a
-            href="https://github.com/Krustuniverse-KlaytnGroup/klaytn-contracts"
-            target="_blank"
-          >
-            DApp Title
+      <div className="border shadow w-64 rounded-md border border-grey p-4 bg-gray-100">
+        <div className="border-b-2 border-dotted border-grey font-semibold text-xl pb-2 hover:text-gray-500">
+          <a href="https://github.com/Krustuniverse-KlaytnGroup/klaytn-contracts" target="_blank">
+            {kit.title}
           </a>
         </div>
-        <div className="py-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </div>
+        <div className="py-4 text-sm">{kit.description}</div>
         <div className="flex place-content-between">
-          <span>xxx</span>
-          <a
-            href="https://github.com/Krustuniverse-KlaytnGroup/klaytn-contracts"
-            target="_blank"
-          >
-            <CodeIcon className="w-6 h-7 text-umber cursor-pointer transition duration-500 ease-in-out hover:translate-y-1 hover:scale-90" />
+          <span className="flex items-center px-2 border rounded-full text-xs bg-green-100 border-green-200">
+            {kit.difficulty}
+          </span>
+          <a href={kit.link} target="_blank">
+            <CodeIcon className="w-6 h-7 text-umber cursor-pointer transition duration-300 ease-in-out hover:scale-90" />
           </a>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default InfoCard;
+export default InfoCard
